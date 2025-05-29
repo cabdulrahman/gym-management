@@ -24,10 +24,3 @@ class Member(Base):
     trainer = relationship('Trainer', back_populates='members')
     membership = relationship('Membership', back_populates='member')
 
-# Example of adding instances to the session
-# session.add_all([
-#     Trainer(name='Ash Ketchum'),
-#     Membership(type='Premium'),
-#     Member(name='Pikachu', trainer_id=1, membership_id=1)
-# ])
-# session.commit()

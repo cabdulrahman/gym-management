@@ -1,8 +1,3 @@
-"""
-A simple debug script for inspecting your gym management database.
-You can use this to quickly check the contents of your tables.
-"""
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from lib.db.models import Base, Trainer, Member, Membership
